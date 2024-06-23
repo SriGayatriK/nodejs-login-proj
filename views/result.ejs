@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Result</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="login.html" defer></script>
+    <script>
+        function displayCredentials() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            document.getElementById('usernameDisplay').textContent = username;
+            document.getElementById('passwordDisplay').textContent = password;
+        }
+    </script>
+</head>
+<body>
+    <p>Entered Credentials:</p>
+    <p>Username: <%= username %></p>
+    <p>Password: <%= password %></p>
+</body>
+</html>
